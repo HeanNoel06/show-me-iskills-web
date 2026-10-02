@@ -9,7 +9,7 @@
 <link rel="icon" href="assets/img/rango.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Sans:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Sans:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -25,19 +25,30 @@
 <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil"><a href="index.html">Inicio</a><details><summary>Producto</summary><div><a href="producto.html">Visión general</a><a href="producto.html#como-funciona">Cómo funciona</a><a href="skills.html">Catálogo de Skills</a><a href="rango.html">Conoce a Rango</a></div></details><details><summary>Soluciones</summary><div><a href="soluciones.html#deporte">Deporte</a><a href="soluciones.html#fuerza">Entrenamiento y fuerza</a><a href="soluciones.html#movilidad">Movilidad</a><a href="soluciones.html#rehabilitacion">Rehabilitación</a></div></details><details><summary>Tecnología</summary><div><a href="tecnologia.html">Plataforma</a><a href="seguridad.html">Seguridad</a><a href="resultados.html">Resultados y validación</a></div></details><details><summary>Recursos</summary><div><a href="recursos.html">Centro de recursos</a><a href="docs.html">Documentación técnica</a><a href="manual.html">Manual de usuario</a><a href="qa.html">QA y pruebas</a></div></details><details><summary>Empresa</summary><div><a href="nosotros.html">Nosotros</a><a href="nosotros.html#equipo">Equipo</a><a href="contacto.html">Ubicación y contacto</a></div></details><details><summary>Soporte</summary><div><a href="help.html">Centro de ayuda</a><a href="soporte.html">Reportar un problema</a><a href="status.html">Estado del sistema</a><a href="help.html#faq">Preguntas frecuentes</a></div></details><a href="soporte.html">Reportar un problema</a></nav>
 <main id="main">
 
-<section data-rango="Hola, soy Rango. Te acompaño en cada repetición." data-rango-audio="assets/audio/rango-01.mp3" class="hero"><div class="container hero-grid">
-  <div>
+<section data-rango="Hola, soy Rango. Te acompaño en cada repetición." data-rango-audio="assets/audio/rango-01.mp3" class="hero hero-min">
+  <div class="hero-light" aria-hidden="true"></div>
+  <div class="hero-center">
+    <div class="hero-rango" aria-hidden="true"><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><img src="assets/img/rango.png" alt="" width="600" height="548"></div>
+    <p class="hero-kicker">Show Me iSkills</p>
+    <h1><span class="w">Vuelve</span> <span class="w">a</span> <span class="w">moverte</span><br><span class="w soft">como</span> <span class="w soft">antes.</span></h1>
+    <p class="hero-sub">Rango te acompaña en cada repetición.</p>
+    <a class="btn btn-primary hero-cta" href="producto.html">Comenzar <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <a class="hero-scroll" href="#vision" aria-label="Bajar a la siguiente sección"><span></span></a>
+  <p class="hero-origin"><img src="assets/img/ite-blanco.png" alt="" width="29" height="30">Instituto Tecnológico de Ensenada</p>
+</section>
+
+<section class="section" id="vision"><div class="container hero-grid">
+  <div class="reveal">
     <p class="eyebrow">Tecnología para la Salud Humana</p>
-    <h1>Tu movimiento. <span class="l2">Analizado. Comprendido.</span> Mejorado.</h1>
-    <p class="lead">Show Me iSkills es una plataforma inteligente que utiliza visión por computadora e inteligencia
-      artificial para acompañar actividades físicas, deportivas, de movilidad y rehabilitación.</p>
-    <div class="btn-row" style="margin-top:30px">
-      <a class="btn btn-primary" href="producto.html">Conocer Show Me iSkills <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <h2>Tu movimiento. Analizado. Comprendido. Mejorado.</h2>
+    <p class="lead" style="margin-top:16px">Visión por computadora e inteligencia artificial para acompañar actividades físicas,
+      deportivas, de movilidad y rehabilitación. Solo con una cámara.</p>
+    <div class="btn-row" style="margin-top:26px">
       <a class="btn btn-ghost" href="#como-funciona">Ver cómo funciona</a>
     </div>
-    <p class="origin"><img src="assets/img/ite-blanco.png" alt="" width="29" height="30">Desarrollado en el Instituto Tecnológico de Ensenada</p>
   </div>
-  <figure class="vision" aria-label="Simulación: el sistema estima la pose de una persona frente a la cámara y mide el ángulo del hombro">
+  <figure class="vision reveal" aria-label="Simulación: el sistema estima la pose de una persona frente a la cámara y mide el ángulo del hombro">
     <div class="vision-bar"><span class="rec">Cámara · análisis local</span><span>Elevación lateral</span></div>
     <canvas id="vision-canvas" role="img" aria-label="Figura con puntos corporales detectados y ángulo del hombro"></canvas>
     <div class="vision-bar" style="border-top:1px solid var(--line);border-bottom:0">
